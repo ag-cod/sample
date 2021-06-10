@@ -4,6 +4,20 @@
         <meta charset="UTF-8">
         <title>クラロワ　クラン探しなら</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/bxslider/jquery.bxslider.css">
+        <script src="/bxslider/jquery.bxslider.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".slide").bxSlider({
+                    auto: "true",
+                    mode: "fade",
+                    speed: 1000,
+                    pause: 4000,
+                    slideWidth: 400
+                });
+               });
+        </script>
+
     </head>
     <body>
         <div class="wrapper">   
@@ -81,6 +95,13 @@
             
         <!--フッターここまで-->
         </div>
+        
+        <div class="slide">
+            <div><img src="/img/challenge/pic1.jpg"></div>
+            <div><img src="/img/challenge/pic2.jpg"></div>
+        <div><img src="/img/challenge/pic3.jpg"></div>
+        </div>
+
     </body>
 </html>
 
